@@ -9,7 +9,7 @@ Each folder contains a description of the project, key implementation details, a
 ## Projects
 
 ### 1. SSH + Docker Compose Manual CI/CD
-> Simple pipeline that deploys services related to a website from a monorepo to a remote server using SSH and Docker Compose.
+> Simple pipeline that deploys services from a repository to a remote server location using SSH and Docker Compose.
 
 📁 [View Project](./ssh-manual-ci-cd)
 
