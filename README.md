@@ -22,10 +22,10 @@ Each folder contains a description of the project, key implementation details, a
 
 ---
 
-### 3. Family Business App Deployment
-> Internal deployment and automation setup for a small business. Focused on reliability and simplicity using Docker-based tools.
+### 3. Autoupdater for an app using gitlab.
+> A pipeline made using gitlab to automatically generate artifacts for an app.
 
-📁 [View Project](./family-business-deploy)
+📁 [View Project](./gitlab-auto-updater)
 
 ---
 
