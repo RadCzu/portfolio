@@ -36,4 +36,4 @@ Each folder contains a description of the project, key implementation details, a
 ---
 
 ## 📧Contact
-If you'd like to know more, feel free to reach out via [LinkedIn](www.linkedin.com/in/radoslawczuj) or check my [CV](./CV_RadoslawCzuj_DevOps_eng.pdf) for additional contact information.
+If you'd like to know more, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/radoslawczuj) or check my [CV](./CV_RadoslawCzuj_DevOps_eng.pdf) for additional contact information.
