@@ -134,7 +134,11 @@ Deploys the Docker image to the GKE cluster using Helm.
 
 ---
 
-## 🧪 Jenkins Setup
+**Links:**
+[Repository with a Helm chart](https://github.com/RadCzu/k8s-api-app)
+
+
+## Required Jenkins Setup
 
 Each pipeline uses a Docker-based agent:
 
