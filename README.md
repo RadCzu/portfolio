@@ -1,6 +1,6 @@
 # Radosław Czuj - Portfolio
 
-Welcome! This is a selection of Development and DevOps-related projects that demonstrate my skills in the job market. You will find examples of CI/CD pipelines, personal lab projects, appliactions and Cloud implementations.
+Welcome! This is a selection of Development and DevOps-related projects that demonstrate my skills in the job market. You will find examples of personal CI/CD pipelines, lab projects, appliactions and Cloud implementations.
 
 Each folder contains a description of the project, key implementation details, and (where possible) configuration examples or diagrams.
 

@@ -9,8 +9,11 @@ set -e
 : "${SSH_PASS:?Missing SSH_PASS}"
 : "${TARGET_DIR:?Missing TARGET_DIR}"
 
-echo "Cloning repo..."
-git clone --depth=1 "$REPO_URL" /repo
+# Optional - branch
+BRANCH="${BRANCH:-main}"
+
+echo "Cloning repo (branch: $BRANCH)..."
+git clone --depth=1 --branch "$BRANCH" "$REPO_URL" /repo
 
 echo "Listing repo contents..."
 ls -l /repo
