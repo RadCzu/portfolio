@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  deploy-theme:
+    image: radeczu/sshdeployer:latest
+    env_file: .env
+    environment:
+      REPO_URL: ${REPO1_URL}
+      TARGET_DIR: ${REPO1_TARGET_DIR}
+      SSH_HOST: ${SSH_HOST}
+      SSH_USER: ${SSH_USER}
+      SSH_PASS: ${SSH_PASS}
+
+  deploy-galleryPlugin:
+    image: radeczu/sshdeployer:latest
+    env_file: .env
+    environment:
+      REPO_URL: ${REPO2_URL}
+      TARGET_DIR: ${REPO2_TARGET_DIR}
+      SSH_HOST: ${SSH_HOST}
+      SSH_USER: ${SSH_USER}
+      SSH_PASS: ${SSH_PASS}
+
+  deploy-proxyDbPlugin:
+    image: radeczu/sshdeployer:latest
+    env_file: .env
+    environment:
+      REPO_URL: ${REPO3_URL}
+      TARGET_DIR: ${REPO3_TARGET_DIR}
+      SSH_HOST: ${SSH_HOST}
+      SSH_USER: ${SSH_USER}
+      SSH_PASS: ${SSH_PASS}
+
+# docker compose up do uruchomienia wszystkich

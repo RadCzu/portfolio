@@ -1,17 +1,17 @@
-# 🛠️ DevOps Portfolio
+# Radosław Czuj - Portfolio
 
-Welcome! This is a selection of DevOps-related projects that demonstrate my skills in CI/CD automation, container orchestration, infrastructure as code, and cloud deployment.
+Welcome! This is a selection of Development and DevOps-related projects that demonstrate my skills in the job market. You will find examples of CI/CD pipelines, personal lab projects, appliactions and Cloud implementations.
 
 Each folder contains a description of the project, key implementation details, and (where possible) configuration examples or diagrams.
 
 ---
 
-## 🚀 Projects
+## Projects
 
 ### 1. SSH + Docker Compose Manual CI/CD
-> Simple pipeline that deploys services from a monorepo to a remote server using SSH and Docker Compose.
+> Simple pipeline that deploys services related to a website from a monorepo to a remote server using SSH and Docker Compose.
 
-📁 [View Project](./ssh-docker-compose-cicd)
+📁 [View Project](./ssh-manual-ci-cd)
 
 ---
 
@@ -29,11 +29,11 @@ Each folder contains a description of the project, key implementation details, a
 
 ---
 
-## 📌 Notes
+## Notes
 - Secrets and credentials have been excluded for security.
-- All content is simplified for demonstration purposes.
+- All contents are simplified for demonstration purposes.
 
 ---
 
-## 📫 Contact
-If you'd like to know more, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/twojanazwa) or check my [CV](link-do-cv.pdf).
+## 📧Contact
+If you'd like to know more, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/twojanazwa) or check my [CV](link-do-cv.pdf) for additional contact information.
