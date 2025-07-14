@@ -22,7 +22,7 @@ Each folder contains a description of the project, key implementation details, a
 
 ---
 
-### 3. Autoupdater for an app using gitlab.
+### 3. Auto-updater for a desktop app using gitlab.
 > A pipeline made using gitlab to automatically generate artifacts for an app.
 
 📁 [View Project](./gitlab-auto-updater)

@@ -3,7 +3,7 @@
 This project implements a GitLab CI/CD pipeline for automating builds and releases of a Windows-based order generation app used by PHU Okland. It includes a custom self-hosted Windows GitLab Runner (running on my local development machine), which allows the app to be compiled into a .exe file using Electron — something that’s not possible on Linux runners due to platform-specific constraints.
 
 ## Key Features
-Tag-triggered pipeline using GitLab’s rules and workflow system. Whenever a new tagged commit appears, a new version is built.
+Tag-triggered [pipeline](.gitlab-ci.yml) using GitLab’s rules and workflow system. Whenever a new tagged commit appears, a new version is built.
 
 ### BUILD:
 
