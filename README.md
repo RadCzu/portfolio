@@ -1,6 +1,6 @@
 # Radosław Czuj - Portfolio
 
-Welcome! This is a selection of Development and DevOps-related projects that demonstrate my skills in the job market. You will find examples of personal CI/CD pipelines, lab projects, appliactions and Cloud implementations.
+Welcome! This is a selection of Development and DevOps-related projects that demonstrate my skills in the job market. Here you will find examples of my personal CI/CD pipelines, lab projects, appliactions and Cloud implementations.
 
 Each folder contains a description of the project, key implementation details, and (where possible) configuration examples or diagrams.
 
@@ -36,4 +36,4 @@ Each folder contains a description of the project, key implementation details, a
 ---
 
 ## 📧Contact
-If you'd like to know more, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/twojanazwa) or check my [CV](link-do-cv.pdf) for additional contact information.
+If you'd like to know more, feel free to reach out via [LinkedIn](www.linkedin.com/in/radoslawczuj) or check my [CV](./CV_RadoslawCzuj_DevOps_eng.pdf) for additional contact information.
