@@ -1,39 +1,40 @@
-# Radosław Czuj - Portfolio
+# My Portfolio
 
-Welcome! This is a selection of Development and DevOps-related projects that demonstrate my skills in the job market. Here you will find examples of my personal CI/CD pipelines, lab projects, appliactions and Cloud implementations.
+Welcome to my main portfolio repository.  
+This repo serves as a central hub to showcase my skills, projects, and experiences across multiple domains in tech.  
 
-Each folder contains a description of the project, key implementation details, and (where possible) configuration examples or diagrams.
+## Repository Structure
+
+- **DEVOPS/**
+  - Automation, CI/CD pipelines, cloud infrastructure, monitoring, and containerization projects.
+- **FULLSTACK-DEVELOPER/**
+  - Web applications, APIs, and frontend + backend projects.
+- **IT-ADMIN/**
+  - System administration, networking, security hardening, and scripting for IT operations.
+- **GAME-DEV/**
+  - Game development experiments, prototypes, and playable projects.
+
+## Purpose
+
+This repository is designed to:
+- Organize my work into clearly defined areas of expertise  
+- Provide quick access to examples of my projects and solutions  
+- Serve as a living portfolio that grows as I continue to learn and build  
+
+## How to Explore
+
+1. Navigate to the folder of interest (for example, `DEVOPS`, `FULLSTACK-DEVELOPER`, etc.)  
+2. Each folder contains its own `readme.md` or documentation to explain the projects within  
+3. Explore the code, solutions, and examples directly  
+
+## Tech Stack Highlights
+
+- **DevOps:** Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, GitLab
+- **Fullstack:** JavaScript/TypeScript, Node.js, Express, SQL/NoSQL, Python, PHP
+- **IT Admin:** Linux/Windows server management, networking, PowerShell, Bash  
+- **Game Dev:** Unity, Unreal Engine, C#, Game design concepts, Godot 
 
 ---
 
-## Projects
+If you'd like to know more, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/radoslawczuj) or find one of my CV variants in the subsections for additional contact information.
 
-### 1. SSH + Docker Compose Manual CI/CD
-> Simple pipeline that deploys services from a repository to a remote server location using SSH and Docker Compose.
-
-📁 [View Project](./ssh-manual-ci-cd)
-
----
-
-### 2. Google Cloud Platform (GKE) CI/CD Lab
-> Jenkins-triggered Terraform deployment to provision infrastructure and deploy an application stack to Kubernetes (GKE).
-
-📁 [View Project](./gcloud-gke-pipeline)
-
----
-
-### 3. Auto-updater for a desktop app using gitlab.
-> A pipeline made using gitlab to automatically generate artifacts for an app.
-
-📁 [View Project](./gitlab-auto-updater)
-
----
-
-## Notes
-- Secrets and credentials have been excluded for security.
-- All contents are simplified for demonstration purposes.
-
----
-
-## 📧Contact
-If you'd like to know more, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/radoslawczuj) or check my [CV](./CV_RadoslawCzuj_DevOps_eng.pdf) for additional contact information.
