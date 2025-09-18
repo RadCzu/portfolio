@@ -5,15 +5,15 @@ This repo serves as a central hub to showcase my skills, projects, and experienc
 
 ## Repository Structure
 
-- **DEVOPS/**
+- [**DEVOPS/**](./DEVOPS)  
   - Automation, CI/CD pipelines, cloud infrastructure, monitoring, and containerization projects.
-- **FULLSTACK-DEVELOPER/**
+- [**FULLSTACK-DEVELOPER/**](./FULLSTACK-DEVELOPER)  
   - Web applications, APIs, and frontend + backend projects.
-- **IT-ADMIN/**
+- [**IT-ADMIN/**](./IT-ADMIN)  
   - System administration, networking, security hardening, and scripting for IT operations.
-- **GAME-DEV/**
+- [**GAME-DEV/**](./GAME-DEV)  
   - Game development experiments, prototypes, and playable projects.
-
+  
 ## Purpose
 
 This repository is designed to:
