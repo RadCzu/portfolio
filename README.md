@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my main portfolio repository.  
+Welcome to the main portfolio repository of Radosław Czuj.
 This repo serves as a central hub to showcase my skills, projects, and experiences across multiple domains in tech.  
 
 ## Repository Structure
