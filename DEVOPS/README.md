@@ -29,6 +29,13 @@ Each folder contains a description of the project, key implementation details, a
 
 ---
 
+### 4. FluxCD integrated into a Minikube cluster.
+> A simple project made to learn the usage of FluxCD for Kubernetes.
+
+📁 [View Project](./flux-cd)
+
+---
+
 ## Notes
 - Secrets and credentials have been excluded for security.
 - All contents are simplified for demonstration purposes.
