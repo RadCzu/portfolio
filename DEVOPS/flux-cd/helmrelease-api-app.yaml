@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: api-app
+  namespace: default
+spec:
+  interval: 5m0s
+  chart:
+    spec:
+      chart: "./flux-agro-cd-lab"
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system
+  targetNamespace: default
+  values:
+    image:
+      repository: radeczu/apitestapp
+      tag: "1.0.1"

@@ -5,7 +5,7 @@ It demonstrates a hybrid IT infrastructure with automated user management, group
 
 ---
 
-## 🔧 Lab Components
+## Lab Components
 
 ### 1. Windows Server (Domain Controller)
 - Configured with **Active Directory** domain: `lab.local`
@@ -58,7 +58,7 @@ It demonstrates a hybrid IT infrastructure with automated user management, group
 - Date and Time synchronisation is the most common issue in configuration of Active Directory. 
 ---
 
-## 🔮 Possible Extensions
+## Possible Extensions
 - Automate setup with PowerShell or Ansible
 - Add monitoring tools (e.g., Grafana + Prometheus for Pi-hole metrics)
 - Implement VPN for secure remote access

@@ -1,0 +1,82 @@
+pipeline {
+    environment {
+        DOCKER_HOST = 'tcp://host.docker.internal:2375'
+    }
+    agent {
+        docker {
+            image 'radeczu/git-jq-curl:latest'
+            args '--add-host=host.docker.internal:host-gateway -e DOCKER_HOST=tcp://host.docker.internal:2375'
+        }
+    }
+    triggers {
+      pollSCM '*/5 * * * *'
+    }
+    stages {
+
+      stage('Check for updates') {
+          steps {
+              echo "Checking for updates.."
+              sh'''
+                #check local version
+  
+                cd "flux-agro-cd-lab/clusters/minikube"
+
+                releaseFile="helmrelease-api-app.yaml"
+
+                current_tag=$(grep 'tag:' "${releaseFile}" | awk '{print $2}' | tr -d '"')
+                echo "Current image tag in ${releaseFile} is: $current_tag"
+
+                #check remote version
+                REPO="radeczu/apitestapp"
+
+                tags=$(curl -s "https://hub.docker.com/v2/repositories/${REPO}/tags/?page_size=100" | jq -r '.results[].name')
+
+                latest_tag=$(echo "$tags" | grep -E '^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9]+)?$' | sort -V | tail -n 1)
+
+                echo "Latest version tag: $latest_tag"
+
+                if [ "$(printf '%s\n' "$latest_tag" "$current_tag" | sort -V | tail -n1)" = "$current_tag" ]; then
+                  echo "No update needed. Current tag ($current_tag) is up-to-date or ahead of latest ($latest_tag)."
+                  exit 1
+                else
+                  echo "Update needed. Proceeding with update..."
+                fi
+              '''
+          }
+      }
+
+      stage('Update') {
+        steps {
+          echo "Updating..."
+          withCredentials([usernamePassword(credentialsId: 'github-pat', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GITHUB_PAT')]) {
+            sh '''
+              # Install git if needed
+              which git || (apk add --no-cache git || apt-get update && apt-get install -y git)
+
+              cd flux-agro-cd-lab/clusters/minikube
+
+              RELEASE_FILE="helmrelease-api-app.yaml"
+
+              REPO="radeczu/apitestapp"
+              tags=$(curl -s "https://hub.docker.com/v2/repositories/${REPO}/tags/?page_size=100" | jq -r '.results[].name')
+              latest_tag=$(echo "$tags" | grep -E '^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9]+)?$' | sort -V | tail -n 1)
+
+              # Update tag in YAML
+              sed -i "s/tag: .*/tag: \\\"$latest_tag\\\"/" "$RELEASE_FILE"
+
+              git config user.name "jenkins"
+              git config user.email "jenkins@local"
+
+              git add "$RELEASE_FILE"
+              git commit -m "chore: update image tag to $latest_tag" || echo "No changes to commit"
+
+              TOKEN=$(cat "$GITHUB_PAT")
+
+              git push "https://$TOKEN@github.com/RadCzu/flux-agro-cd-lab.git" HEAD:main
+            '''
+          }
+        }
+      }
+
+    }
+}
