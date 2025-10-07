@@ -19,6 +19,7 @@ This project demonstrates a GitOps-based deployment pipeline for a sample API ap
 
 ## Repository Structure
 
+```
 repo/
 ├─ charts/ # Helm charts for deploying applications
 ├─ clusters/ # Cluster-specific deployment configurations
@@ -32,7 +33,7 @@ repo/
 │ └─ api-app.yaml
 ├─ Chart.yaml # Helm chart metadata
 └─ values.yaml # Default values for the Helm chart
-
+```
 
 ## How it Works
 
