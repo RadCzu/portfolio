@@ -24,11 +24,13 @@ repo/
 ├─ charts/ # Helm charts for deploying applications
 ├─ clusters/ # Cluster-specific deployment configurations
 │ └─ minikube/ # Minikube cluster setup
-│ ├─ helmrelease-api-app.yaml # HelmRelease manifest for the API app
-│ ├─ jenkinsfile # Pipeline that updates the image in HelmRelease when a new version is available
-│ └─ flux-system/ # Flux manifests for Git reconciliation
-│ ├─ gotk-sync.yaml
-│ └─ kustomization.yaml
+│     ├─ helmrelease-api-app.yaml # HelmRelease manifest for the API app
+│     ├─ jenkinsfile # Pipeline that updates the image in HelmRelease when a new version is available
+│     ├─ kustomization.yaml
+│     └─flux-system/ # Flux manifests for Git reconciliation
+│         ├─ gotk-sync.yaml
+│         ├─ gotk-components.yaml
+│         └─ kustomization.yaml
 ├─ templates/ # Helm templates for API app manifests
 │ └─ api-app.yaml
 ├─ Chart.yaml # Helm chart metadata
